@@ -107,10 +107,10 @@ def print_stats(step, accu):
 def print_stats_alt():
 	# print stats without adding anything to clingo output
 	print("\n")
-	for name, count in sorted(util.Count.counts.items()):
+	for name, count in sorted(Count.counts.items()):
 		print(f"{name:24}  :   {count}")
 	
-	for name, time in sorted(util.Timer.timers.items()):
+	for name, time in sorted(Timer.timers.items()):
 		print(f"{name:24}  :   {time}")
 
 def get_size(obj, seen=None):
